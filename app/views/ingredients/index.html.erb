@@ -1,0 +1,12 @@
+<div class="text-center">
+<h1>list of ingredients</h1>
+
+<ul class="list-unstyled">
+<% @ingredients.each do |ingredient| %>
+  <li> <%=link_to ingredient.name, ingredient_path(ingredient) %> </li>
+
+<% end %>
+</ul>
+
+<%= link_to "back", cocktails_path %>
+</div>

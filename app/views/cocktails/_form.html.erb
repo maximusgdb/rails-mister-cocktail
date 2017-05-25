@@ -1,0 +1,9 @@
+<%= simple_form_for (@cocktail) do |f| %>
+<%= f.error_notification %>
+
+<%= f.input :name, placeholder: "Cocktail" %>
+<%= f.input :picture %>
+
+<%= f.button :submit, class: "btn btn-primary" %>
+
+<% end %>

@@ -1,0 +1,11 @@
+<div class="text-center">
+<h1>Voici les cocktails qui possedent l'ingredient <%= @ingredient.name %></h1>
+
+<ul class="list-unstyled">
+  <% @ingredient.cocktails.each do |cocktail| %>
+  <li><%= cocktail.name %></li>
+  <% end %>
+</ul>
+</div>
+
+<%=  link_to "back", ingredients_path %>
