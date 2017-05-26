@@ -3,6 +3,8 @@
 
     <h1><%= @cocktail.name %></h1>
 
+    <%= image_tag @cocktail.picture.url(:standard) %>
+
 
     <ul class="list-unstyled">
     <% @cocktail.doses.each do |dose| %>

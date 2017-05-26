@@ -24,12 +24,13 @@ class CocktailsController < ApplicationController
         format.json { render json: @cocktail.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name, :picture)
+    params.require(:cocktail).permit(:name, :picture, :picture_cache)
 
   end
 
